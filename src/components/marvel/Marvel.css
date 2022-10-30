@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.outPutScreen {
+  padding: 16px;
+  text-align: right;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+  background-color: red;
+  font-weight: 1000;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers button {
+  font-weight: 900;
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: black;
+  color: white;
+}
